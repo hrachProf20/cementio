@@ -1,0 +1,912 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px -1px;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.phone{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    box-shadow: 0 0 8px -3px black
+}
+
+.phone i{
+    color: #ffa800;
+    font-size: 30px;
+}
+
+.title-header h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title-header p{
+    font-size: 12px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link{
+    color: black;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+
+.nav-link:hover{
+    color: #ffa800;;
+}
+
+.menu > button{
+    min-width: 160px;
+    padding: 6px;
+    height: 40px;
+    background: #fdc236;
+    border: none;
+    border-radius: 3px;
+}
+
+.menu > button > a{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+}
+
+.builder{
+    background-image: url("images/mt-2074-slide-1.jpg");
+    width: 100%;
+    height: 700px;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-builder h2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.text-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-about p{
+    color: white;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.buttons-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    width: 400px;
+}
+
+.btn,
+.buttons-about button{
+    width: 180px;
+    height: 60px;
+    border-radius:3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    cursor: pointer;
+}
+
+.buttons-about button a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+.btn{
+    background: #fdc236;
+}
+
+.btn:hover{
+    background: #ffa800;
+}
+
+.buttons-about button:last-child a:hover{
+    color: #ffa800;
+}
+
+.services{
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main-services{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-services{
+    width: 550px;
+}
+
+.info-services h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.info-services p{
+    font-weight: 100;
+    font-size: 13px;
+}
+
+
+.services-item{
+    width: 370px;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 6px 1px 0 #ffa800;
+}
+
+.services-img{
+    width: 100%;
+}
+.services-img img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc-services{
+    width: 100%;
+    height: 47px;
+    background: #fdc236;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.desc-services p{
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+    font-size: 26px;
+    line-height: 1.8;
+}
+
+.info-company{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #d5d5d5;
+    flex-direction: column;
+}
+
+
+.text-company p{
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #00000096;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.contact-company{
+    display: flex;
+    align-items: center;
+}
+
+.contact-company p{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.contact-btn{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.contact-btn i{
+    font-size: 18px;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.choose-us{
+    width: 100%;
+    display: flex;
+
+}
+
+.choose-bg{
+    width:100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url(images/mt-2074-why-bg1.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+}
+
+.choose-bg a,i{
+    cursor: pointer;
+}
+
+.title-choose h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.text-choose{
+    width: 300px;
+}
+
+.text-choose p{
+    color: black;
+    padding-top: 25px;
+}
+
+
+.why-choose{
+    width: 400px;
+}
+
+.stuff-choose{
+    margin-top: 30px;
+}
+
+.stuff{
+    display: flex;
+    align-items: center;
+}
+
+.stuff p{
+    font-weight: 700;
+    color: black;
+}
+
+.call-form{
+    width: 270px;
+    height: auto;
+}
+
+.call-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffa800;
+    width: 100%;
+    height: 130px;
+    margin-top: 1px;
+}
+
+.call-item > a,i{
+    color: white;
+}
+
+.call-item  i{
+    padding: 0 10px;
+}
+
+
+.application{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app{
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+
+.app  i,a{
+    color: #FDC236;
+}
+
+.interest{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.working-interest{
+    display: flex;
+    justify-content: space-around;
+}
+
+.working-interest img{
+    width: 100px;
+}
+
+.working{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.working-text{
+    width: 190px;
+}
+
+.working-text p{
+    font-size: 14px;
+}
+
+footer{
+    background: black;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.footer-text a{
+    color: white;
+    font-size: 12px;
+}
+
+.footer-logo >  h2{
+    color: white;
+}
+
+.footer-logo > a{
+    color: #ffa800;
+    font-size: 10px;
+}
+
+.sms{
+    position: fixed;
+    flex-direction: column-reverse;
+    display: flex;
+    bottom: 10px;
+    right: 15px;
+    animation: bounce 1s  3 ease;
+    animation-timing-function: ease-in, linear, ease-out;
+}
+
+.sms a{
+    animation: sms 8s ease-out;
+    cursor: pointer;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    color: black;
+    font-weight: 900;
+    font-size: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px) contrast(0.6);
+}
+
+.sms img{
+    width: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
+
+@media screen  and (max-width: 1350px) {
+    .services-item {
+        width: 300px;
+    }
+
+    .services-img img {
+        object-fit: cover;
+    }
+
+    .working-interest img{
+        width: 60px;
+    }
+
+    .working{
+        display: flex;
+        gap: 20px;
+    }
+
+    .working-text{
+        width: 100px;
+    }
+
+    .working-text p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .stuff img{
+        width: 40px;
+    }
+
+    .stuff p{
+        font-size: 12px;
+    }
+
+    .title-choose h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .why-choose{
+        width: 300px;
+    }
+
+    .call-form {
+        width: 220px;
+        height: auto;
+    }
+
+    .call-item{
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .info-builder h2{
+        font-size: 45px;
+    }
+
+    .text-about p{
+        font-size: 12px;
+    }
+
+    .btn, .buttons-about button {
+        width: 150px;
+        height: 45px;
+    }
+
+    .buttons-about button a {
+        font-size: 12px;
+    }
+
+    .buttons-about{
+        width: 330px;
+    }
+
+    .info-services h2 {
+        font-size: 35px;
+    }
+    .services-item {
+        width: 260px;
+    }
+
+    .desc-services p {
+        font-size: 18px;
+    }
+
+    .text-company p {
+        font-size: 12px;
+    }
+
+    .contact-company {
+        width: 170px;
+    }
+
+    .btn {
+        width: 60px;
+        height: 35px;
+    }
+
+    .contact-company p {
+        font-size: 15px;
+    }
+
+    .services {
+        width: 98%;
+        margin: 30px auto;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    header{
+        justify-content: space-between;
+        padding: 30px 5px;
+    }
+
+     .title-header h1{
+       font-size: 25px;
+    }
+
+    .title-header p {
+        font-size: 10px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+    .menu > button {
+        min-width: 120px;
+        padding: 10px;
+        height: 32px;
+    }
+    .menu > button > a {
+        font-size: 10px;
+    }
+
+    .nav-link{
+        font-size: 10px;
+    }
+
+    .title-choose h2 {
+        font-size: 22px;
+    }
+
+    .text-choose p {
+        padding-top: 12px;
+        font-size: 12px;
+    }
+    .stuff-choose {
+        margin-top: 22px;
+    }
+
+    .text-choose {
+        width: 200px;
+    }
+
+    .stuff p {
+        font-size: 9px;
+    }
+
+    .why-choose {
+        width: 230px;
+    }
+
+    .stuff img {
+        width: 35px;
+    }
+
+    .call-item {
+        height: 100px;
+    }
+
+    .call-item > a, i {
+        color: white;
+        font-size: 12px;
+    }
+
+    .app {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer{
+        padding: 0 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 830px){
+
+    header{
+        flex-direction: column;
+        align-items: normal;
+        padding: 10px 5px;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .services-item{
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .services-img{
+        height: 170px;
+    }
+
+    .services-img img {
+        object-fit: fill;
+    }
+    .builder{
+        height: 440px;
+    }
+
+    .services {
+        width: 90%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .burger-menu{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background: #373737;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-menu i{
+        color: white;
+    }
+
+    .active{
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: 0;
+        top: 110px;
+        width: 100%;
+        height: 200px;
+        border: 2px solid #fdc236;
+        background: #ffffff;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .choose-bg{
+        display: grid;
+        justify-content: normal;
+    }
+
+    .call-form{
+        width: 100%;
+    }
+
+    .call-item {
+        height: 80px;
+    }
+
+    .why-choose {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px) contrast(0.6);
+    }
+
+    .stuff-choose {
+        width: 100%;
+    }
+
+    .stuff{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .text-choose{
+        width: 100%;
+    }
+
+    .text-choose p{
+        padding: 10px 10px;
+    }
+
+    .stuff img {
+        width: 45px;
+    }
+
+    .stuff p {
+        font-size: 11px;
+    }
+
+    .working-interest{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .working-interest img{
+        width: 400px;
+    }
+
+    .working{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .working-text{
+        width: 350px;
+    }
+
+    .working-text h2{
+        font-size: 40px;
+    }
+
+    .working-text p {
+        font-size: 16px;
+    }
+
+    .footer-text a {
+        font-size: 10px;
+    }
+
+    .footer-logo > h2 {
+        font-size: 22px;
+    }
+
+    .footer-logo > a {
+        color: #ffa800;
+        font-size: 8px;
+    }
+
+    .footer-item{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .info-builder h2 {
+        font-size: 24px;
+    }
+
+    .text-about p {
+        font-size: 7px;
+    }
+
+    .buttons-about {
+        margin-top: 17px;
+    }
+
+    .buttons-about button {
+        width: 100px;
+        height: 40px;
+    }
+
+    .buttons-about {
+        width: 230px;
+    }
+
+    .buttons-about button a {
+        font-size: 10px;
+    }
+
+    .builder {
+        height: 315px;
+    }
+
+    .info-services h2 {
+        font-size: 22px;
+    }
+
+    .info-services {
+        width: 100%;
+    }
+
+    .info-services p {
+        font-size: 10px;
+    }
+
+    .main-services {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .working-interest img{
+        width: 280px;
+    }
+
+    .working{
+        align-items: center;
+    }
+
+    .working-text {
+        width: 100%;
+        padding: 10px 11px;
+    }
+
+    .footer-text{
+        margin-bottom: 15px;
+    }
+
+    .footer-logo{
+        margin-bottom: 15px;
+    }
+
+    .phone{
+        width: 35px;
+        height: 35px;
+    }
+    .phone i{
+        font-size: 15px;
+    }
+
+    .sms img{
+        width: 35px;
+    }
+
+    .sms a{
+        left: -30px;
+        font-size: 6px;
+    }
+}
